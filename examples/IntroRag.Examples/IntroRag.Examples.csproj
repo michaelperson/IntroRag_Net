@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>IntroRag.Examples</RootNamespace>
+    <NoWarn>$(NoWarn);SKEXP0070;SKEXP0001</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SemanticKernel" Version="1.74.0" />
+    <PackageReference Include="Microsoft.SemanticKernel.Connectors.Ollama" Version="1.74.0-alpha" />
+    <PackageReference Include="Microsoft.SemanticKernel.Connectors.Qdrant" Version="1.74.0-preview" />
+  </ItemGroup>
+  <!-- Usings globaux : chaque exemple reste concis (comme une cellule de notebook) -->
+  <ItemGroup>
+    <Using Include="Microsoft.SemanticKernel" />
+    <Using Include="Microsoft.SemanticKernel.ChatCompletion" />
+    <Using Include="Microsoft.SemanticKernel.Connectors.Ollama" />
+    <Using Include="Microsoft.Extensions.AI" />
+    <Using Include="Microsoft.Extensions.VectorData" />
+    <Using Include="Microsoft.SemanticKernel.Connectors.Qdrant" />
+    <Using Include="Qdrant.Client" />
+  </ItemGroup>
+</Project>

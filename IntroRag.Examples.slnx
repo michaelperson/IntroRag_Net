@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/IntroRag.Core/IntroRag.Core.csproj" />
+    <Project Path="src/IntroRag.Console/IntroRag.Console.csproj" />
+  </Folder>
+  <Folder Name="/examples/">
+    <Project Path="examples/IntroRag.Examples/IntroRag.Examples.csproj" />
+  </Folder>
+</Solution>
